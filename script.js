@@ -30,9 +30,30 @@ function getHumanChoice() {
 }
 
 
-let computerResult = getComputerChoice();
-console.log("Computer: " + computerResult);
-
 let humanResult = getHumanChoice();
 console.log("User: " + humanResult);
 
+let computerResult = getComputerChoice();
+console.log("Computer: " + computerResult);
+
+
+
+
+
+if (humanResult == computerResult) {
+    console.log("It's a Draw");
+} else if (humanResult == 1 && computerResult == 2) {
+    console.log("Computer gets 1 point");
+} else if (humanResult == 1 && computerResult == 3) {
+    console.log("User gets 1 point");
+} else if (humanResult == 2 && computerResult == 1) {
+    console.log("User gets 1 point");
+} else if (humanResult == 2 && computerResult == 3) {
+    console.log("Computer gets 1 point");
+} else if (humanResult == 3 && computerResult == 1) {
+    console.log("Computer gets 1 point");
+} else if (humanResult == 3 && computerResult == 2) {
+    console.log("User gets 1 point");
+} else {
+    console.log("invalid outcome!!!");
+}
